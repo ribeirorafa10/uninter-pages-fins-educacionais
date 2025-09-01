@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+}
+
+header {
+    grid-column-start: 1;
+    grid-column-end: 12;
+    background-color: #506e6a;
+}
+
+header>h1 {
+    color: white;
+    text-align: center;
+}
+
+.menu {
+    grid-column-start: 6;
+    grid-column-end: 12;
+    justify-content: center;
+    /* centraliza o menu*/
+    gap: 20px;
+    /*  https://nekocalc.com/px-to-em-converter */
+}
+
+.imagem_leo {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.principal {
+    grid-column-start: 4;
+    grid-column-end: 12;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: justify;
+}
+
+footer {
+    grid-column-start: 1;
+    grid-column-end: 12;
+    background-color: #506e6a;
+    color: white;
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+ul {
+    list-style-type: none;
+    color: #506e6a;
+}
+
+li {
+    float: left;
+}
+
+.img {
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    padding: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.img img {
+    width: 125px;
+    height: 115px;
+}
+
+a,
+a:link {
+    text-decoration: none;
+    padding: 8px 16px;
+    border: solid #506e6a 1px;
+}
+
+a:hover {
+    background-color: #506e6a;
+    color: white;
+}
+
+@media all and (min-width: 35rem) {
+    body {
+        margin: 0 auto;
+    }
+
+    /*.container {
+        max-width: 1200px;
+        margin: 0 auto;    
+    }
+    */
+
+    .img {
+        max-width: 28rem;
+        margin: 1rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .wrapper {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+    .imagem_leo {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+    .principal {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+}
